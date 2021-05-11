@@ -23,6 +23,13 @@ const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: inherit;
 }
+
+button {
+  border: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
 `;
 
 ReactDOM.render(
