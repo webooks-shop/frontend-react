@@ -1,23 +1,24 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Header from "@components/Header";
+import BookList from "@features/books/components/BookList";
 
 function App() {
   return (
-    <WholeContainer>
+    <AppContainer>
       <Header />
       <BrowserRouter>
         <Switch>
-          <Route />
+          <Route exact path="/" component={BookList} />
         </Switch>
       </BrowserRouter>
-    </WholeContainer>
+    </AppContainer>
   );
 }
 
 export default App;
 
-const WholeContainer = styled.section`
+const AppContainer = styled.section`
   margin: 0 auto;
   width: 700px;
   max-width: 100%;

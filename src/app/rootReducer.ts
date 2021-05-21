@@ -1,7 +1,6 @@
 import { combineReducers } from "@reduxjs/toolkit";
+import bookReducer from "@features/books/bookSlice";
 
-const rootReducer = combineReducers({});
-
-export type RootState = ReturnType<typeof rootReducer>;
+const rootReducer = combineReducers({ books: bookReducer });
 
 export default rootReducer;
